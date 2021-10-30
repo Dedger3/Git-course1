@@ -6,7 +6,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=["start"])
 def handle_message(message):
-    bot.reply_to(message, "Привет")
+    bot.reply_to(message, "Привет Друг!")
 
 @bot.message_handler(content_types=["text"])
 def handle_message(message):
